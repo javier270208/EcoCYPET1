@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #161815;
+    color: #fff;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.carousel-text-bg {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text-bg h5 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.carousel-text-bg p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+}
+
+.carousel-text-bg a.btn {
+    background-color: #0066ff;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.carousel-text-bg a.btn:hover {
+    background-color: #0052cc;
+}
+
+.carousel-inner::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 30, 82, 0.4);
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-dark {
+    background-color: #003366;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.services .card-body i {
+    font-size: 50px;
+}
+
+.team .card-body i {
+    font-size: 20px;
+}
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center images if they are narrower than column */
+    gap: 10px; /* Spacing between images */
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2,
+.section-header p {
+    color: #fff;
+}
+
+.section-header p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#comments .comment {
+    border-bottom: 1px solid #555;
+    padding: 10px 0;
+}
+
+#comments .comment:last-child {
+    border-bottom: none;
+}
+
+#comments .comment h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#comments .comment p {
+    margin: 5px 0 0 0;
+    font-size: 1em;
+}
+
+#comments .comment .delete-btn {
+    float: right;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background: transparent !important;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: transparent !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.portfolio .card {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio .card .card-body {
+    flex: 1;
+}
+
+.portfolio .card .img-area {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.portfolio .card .img-area img {
+    max-width: 100%;
+    height: auto;
+}
+
+.interactive-section {
+    background-color: #1a1a1a;
+}
+
+.word-box {
+    transition: all 0.3s ease;
+    min-width: 120px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.word-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0d6efd;
+    /* Color primario de Bootstrap */
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: #0a58ca;
+    /* Un tono más oscuro del primario */
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-item,
+    .w-100 {
+        height: 70vh;
+    }
+
+    .carousel-text-bg h5 {
+        font-size: 30px;
+    }
+
+    .carousel-text-bg a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .carousel-text-bg p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .portfolio .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio .card .img-area {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .word-box {
+        min-width: 100px;
+        font-size: 1rem;
+        padding: 0.75rem !important;
+    }
+
+    .about-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;      /* Hacemos que el contenedor ocupe el ancho de su columna */
+        height: auto;     /* Permitimos que la altura se ajuste al contenido de las imágenes apiladas */
+    }
+
+    .about-img img {
+        max-width: 250px; /* Reducimos el ancho máximo de las imágenes */
+        height: auto;
+    }
+}
